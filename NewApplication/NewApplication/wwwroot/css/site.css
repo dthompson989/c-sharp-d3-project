@@ -33,3 +33,42 @@
         display: none;
     }
 }
+
+/* SVG chart styling */
+.chart-container {
+    height: 500px;
+    width: 99%;
+}
+
+/* Bar Chart Color Range */
+.blue {
+    fill: #1e5ea8;
+}
+
+.blue:hover {
+    fill: #133a53;
+}
+
+.green {
+    fill: #33cc33;
+}
+
+.green:hover {
+    fill: #196619;
+}
+
+.yellow {
+    fill: #FFFF33;
+}
+
+.yellow:hover {
+    fill: #7F7F18;
+}
+
+.orange {
+    fill: #FF5000;
+}
+
+.orange:hover {
+    fill: #7F2800;
+}
