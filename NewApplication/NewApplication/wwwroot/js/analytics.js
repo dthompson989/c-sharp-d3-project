@@ -47,14 +47,14 @@ function drawGraph($filename) {
                 d3.select("g").remove();
                 if (monthArr.indexOf(d.day) >= 0) {
                     $('#barGraphText').html("2017 Order History");
-                    drawGraph("~/Documents/order_data.tsv");
+                    drawGraph("Documents/order_data.tsv");
                 } else {
                     if (daysArr.indexOf(d.day) >= 0) {
                         $('#barGraphText').html("2017 Order History - " + d.day + "'s");
-                        drawGraph("~/Documents/" + d.day + "_data.tsv");
+                        drawGraph("Documents/" + d.day + "_data.tsv");
                     } else {
                         $('#barGraphText').html("2017 Order History");
-                        drawGraph("~/Documents/monthly_data.tsv");
+                        drawGraph("Documents/monthly_data.tsv");
                     }
                 }
             })
@@ -68,4 +68,4 @@ function drawGraph($filename) {
             });
     });
 }
-$(document).ready(drawGraph("~/Documents/monthly_data.tsv"));
+$(document).ready(drawGraph("Documents/monthly_data.tsv"));
